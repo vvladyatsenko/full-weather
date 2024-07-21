@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    .container.mt-5
+        h1 Protected Page
+        h2 Hello, #{user.email}
+        a(href="/auth/logout" class="btn btn-danger") Logout
