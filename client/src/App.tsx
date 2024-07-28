@@ -7,7 +7,6 @@ import { Profile } from './pages/Profile/Profile';
 function App() {
   return (
     <Router>
-
       <div className="global-container">
         <div className="container">
           <Routes>

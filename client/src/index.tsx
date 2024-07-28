@@ -17,7 +17,6 @@ root.render(
       <ThemeProvider>
         <App />
         <Register></Register>
-        
       </ThemeProvider>
     </Provider>
   </React.StrictMode>

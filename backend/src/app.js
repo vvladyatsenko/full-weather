@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const userRoutes = require('./routes/users');
-const authRoutes = require('./routes/auth'); // Импорт auth маршрутов
+const authRoutes = require('./routes/auth');
 
 dotenv.config({ path: './.env' });
 
@@ -30,6 +30,6 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/users', userRoutes);
-app.use('/api/auth', authRoutes); // Подключаем маршруты для аутентификации
+app.use('/api/auth', authRoutes);
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
